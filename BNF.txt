@@ -9,7 +9,10 @@
 <condicional>:: </>/<=/==/=!
 <tkn_condicion>:: "Si" <condicion> "hacer" <Lista de sentencia><Sentencia> "Fin Si" / 
 "Si" <condicion> "hacer" <Lista de sentencia><Sentencia> "Sino" <Lista de Sentencia><Sentencia> "Fin Si"
-<tkn_asignacion>::<variable>"="<valor> / <variable>"="<tkn_aritmetica> / <variable> "=" <variable><operador><valor>
+<tkn_asignacion>::<variable>"="<valor> / <variable>"="<tkn_aritmetica> / <variable> "=" <variable <operador><valor> / <identificador>"=" <identificador> "+" <identificador>
 <valor>::0/1/2/3/4/5/6/7/8/9
 <tkn_aritmetica>::<valor><operador><valor>
 <operador>::+/-/*/ %
+<tkn_Salida>::"imprimir"<cadena> / "mostrar resultado"
+<identificador>::<palabra> / <letra>
+<tkn_entrada>:: <cadena><sentencia> / <cadena>
